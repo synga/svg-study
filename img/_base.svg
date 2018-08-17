@@ -1,0 +1,4 @@
+<!-- É necessário colocar o atributo de xmlns, esse namespace é necessário para o browser interpretar esse svg -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300">
+  <circle cx="100" cy="100" r="50"></circle>
+</svg>
