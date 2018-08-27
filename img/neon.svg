@@ -68,8 +68,8 @@
     </feMerge>
   </filter>
   <!-- cactus outer -->
-  <path class="cactus outer" d="M220,300 L220,250 L180,250 Q158,250 160,220 L160,170 C160,130 200,130 200,170 L200,220 L220,220 L220,100 C220,60 260,60 260,100 L260,180 L280,180 L280,140 C280,100 320,100 320,140 L320,210 L260,210 L260,300" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="10" stroke-linecap="round" style="filter:url(#glow)" />
-  <path class="cactus outer" d="M220,300 L220,250 L180,250 Q158,250 160,220 L160,170 C160,130 200,130 200,170 L200,220 L220,220 L220,100 C220,60 260,60 260,100 L260,180 L280,180 L280,140 C280,100 320,100 320,140 L320,210 L260,210 L260,300" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="3" stroke-linecap="round"/>
+  <path class="cactus outer" d="M220,300 L220,250 L180,250 Q158,250 160,220 L160,170 C160,130 200,130 200,170 L200,220 L220,220 L220,100 C220,60 260,60 260,100 L260,180 L280,180 L280,140 C280,100 320,100 320,140 L320,190 Q320,210 300,210 L260,210 L260,300" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="10" stroke-linecap="round" style="filter:url(#glow)" />
+  <path class="cactus outer" d="M220,300 L220,250 L180,250 Q158,250 160,220 L160,170 C160,130 200,130 200,170 L200,220 L220,220 L220,100 C220,60 260,60 260,100 L260,180 L280,180 L280,140 C280,100 320,100 320,140 L320,190 Q320,210 300,210 L260,210 L260,300" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="3" stroke-linecap="round"/>
   <!-- cactus inner -->
   <path class="cactus inner" d="M240,300 L240,235 L180,235 L180,170 M240,235 L240,195 L300,195 L300,140 M240,195 L240,100" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="10" stroke-linecap="round" style="filter:url(#glow)" />
   <path class="cactus inner" d="M240,300 L240,235 L180,235 L180,170 M240,235 L240,195 L300,195 L300,140 M240,195 L240,100" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="3" stroke-linecap="round" />
