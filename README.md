@@ -8,5 +8,6 @@ Repositório com o intuito de servir para estudos de SVG. Criarei alguns icones 
 
 - Um icone de pessoa.
 - Um icone de troféu.
+- Um painel neon.
 - Minha assinatura.
 - Animar a assinatura.

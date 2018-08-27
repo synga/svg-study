@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" version="1.1" viewBox="0 0 500 500">
+  <!-- 
+    TODO:
+    - MELHORAR O EFEITO DE BLINK.
+    - ADICIONAR ANIMAÇÕES NA MARACA E PIMENTA PARA TROCAREM PARA UM FORMA ALTERANTIVA (EX: UMA SEGUNDA MARACA MAIS ABAIXO PARA ELAS ALTERANAREM E DAR EFEITO DE QUE ESTÁ TOCANDO".
+    - POSICIONAR MELHOR NO CANVAS, ESTÁ COM 500X500 DE ÁREA E O DESENHO OCUPA SÓ UM ESPAÇO, SER MAIS SUCINDO E MENOR.
+    - VER O POR QUE DO FILTRO TER FICADO DA FORMA QUE FICOU NO .vase .inner.
+    - SEPARAR MAIS AINDA OS COMPONENTES PARA PODER ANIMAR DE FORMAS DIFERENTES
+   -->
+  <style type="text/css">
+    * {
+      background-color: #444;
+    }
+
+    .cactus.outer {
+      animation: blink1 10s infinite;
+    }
+
+    .cactus.inner {
+      animation: blink2 10s infinite;
+    }
+
+    .vase.base {
+      animation: blink3 12s infinite;
+    }
+
+    .vase.inner, .dot {
+      animation: blink4 12s infinite;
+    }
+
+    .pepper, .maraca {
+      animation: blink4 6s infinite;
+    }
+
+    @keyframes blink1 {
+      30% { opacity: .7; }
+      31% { opacity: 1; }
+      75% { opacity: .3; }
+      75.1% { opacity: 1; }
+    }
+
+    @keyframes blink2 {
+      10% { opacity: .7; }
+      11% { opacity: 1; }
+      75% { opacity: .3; }
+      75.1% { opacity: 1; }
+    }
+
+    @keyframes blink3 {
+      40% { opacity: .7; }
+      41% { opacity: 1; }
+      85% { opacity: .3; }
+      85.1% { opacity: 1; }
+    }
+
+    @keyframes blink4 {
+      0% { opacity: .7; }
+      1% { opacity: 1; }
+      65% { opacity: .3; }
+      65.1% { opacity: 1; }
+    }
+  </style>
+  <!-- FILTERS -->
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blurred"></feGaussianBlur>
+    <feMerge>
+      <feMergeNode in="blurred"/>
+    </feMerge>
+  </filter>
+  <!-- cactus outer -->
+  <path class="cactus outer" d="M220,300 L220,250 L180,250 Q158,250 160,220 L160,170 C160,130 200,130 200,170 L200,220 L220,220 L220,100 C220,60 260,60 260,100 L260,180 L280,180 L280,140 C280,100 320,100 320,140 L320,210 L260,210 L260,300" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="10" stroke-linecap="round" style="filter:url(#glow)" />
+  <path class="cactus outer" d="M220,300 L220,250 L180,250 Q158,250 160,220 L160,170 C160,130 200,130 200,170 L200,220 L220,220 L220,100 C220,60 260,60 260,100 L260,180 L280,180 L280,140 C280,100 320,100 320,140 L320,210 L260,210 L260,300" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="3" stroke-linecap="round"/>
+  <!-- cactus inner -->
+  <path class="cactus inner" d="M240,300 L240,235 L180,235 L180,170 M240,235 L240,195 L300,195 L300,140 M240,195 L240,100" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="10" stroke-linecap="round" style="filter:url(#glow)" />
+  <path class="cactus inner" d="M240,300 L240,235 L180,235 L180,170 M240,235 L240,195 L300,195 L300,140 M240,195 L240,100" fill="transparent" stroke="rgb(2, 255, 0)" stroke-width="3" stroke-linecap="round" />
+  <!-- vase base -->
+  <path class="vase base" d="M260,325 L190,325 L190,310 L290,310 L290,325 L280,325 M285,330 Q280,350 260,370 L220,370 Q200,350 195,330" fill="transparent" stroke="rgb(255, 249, 0)" stroke-width="10" stroke-linecap="round" style="filter:url(#glow)" />
+  <path class="vase base" d="M260,325 L190,325 L190,310 L290,310 L290,325 L280,325 M285,330 Q280,350 260,370 L220,370 Q200,350 195,330" fill="transparent" stroke="rgb(255, 249, 0)" stroke-width="3" stroke-linecap="round" />
+  <!-- vase inner -->
+  <path class="vase inner" d="M208,342 L215,350 L225,340 L235,350 L245,340 L255,350 L265,340 L271,346" fill="transparent" stroke="rgb(255, 249, 0)" stroke-width="3" stroke-linecap="round" style="filter:url(#glow)" />
+  <path class="vase inner" d="M208,342 L215,350 L225,340 L235,350 L245,340 L255,350 L265,340 L271,346" fill="transparent" stroke="rgb(255, 249, 0)" stroke-width="3" stroke-linecap="round" />
+  <circle class="dot" cx="215" cy="342" r="1.5" style="fill: rgb(255, 249, 0)" />
+  <circle class="dot" cx="225" cy="348" r="1.5" style="fill: rgb(255, 249, 0)" />
+  <circle class="dot" cx="235" cy="342" r="1.5" style="fill: rgb(255, 249, 0)" />
+  <circle class="dot" cx="245" cy="348" r="1.5" style="fill: rgb(255, 249, 0)" />
+  <circle class="dot" cx="255" cy="342" r="1.5" style="fill: rgb(255, 249, 0)" />
+  <circle class="dot" cx="265" cy="348" r="1.5" style="fill: rgb(255, 249, 0)" />
+  <!-- pepper -->
+  <path class="pepper" d="M210,270 Q210,280 200,280 C220,290 170,305 155,283 S165,295 190,280" fill="transparent" stroke="rgb(255, 73, 0)" stroke-width="8" stroke-linecap="round" style="filter:url(#glow)" />
+  <path class="pepper" d="M210,270 Q210,280 200,280 C220,290 170,305 155,283 S165,295 190,280" fill="transparent" stroke="rgb(255, 73, 0)" stroke-width="3" stroke-linecap="round" />
+  <!-- maraca -->
+  <path class="maraca" d="M295,275 L285,280 C270,290 270,272 278,270 L305,255 A30,30 0 0,1 357,227 A30,30 0 0,1 313,266 L306,269 M330,223 L325,230 L340,230 L334,238 L345,242 L337,249 L349,255" fill="transparent" stroke="rgb(255, 73, 0)" stroke-width="8" stroke-linecap="round" style="filter:url(#glow)" />
+  <path class="maraca" d="M295,275 L285,280 C270,290 270,272 278,270 L305,255 A30,30 0 0,1 357,227 A30,30 0 0,1 313,266 L306,269 M330,223 L325,230 L340,230 L334,238 L345,242 L337,249 L349,255" fill="transparent" stroke="rgb(255, 73, 0)" stroke-width="3" stroke-linecap="round" />
+  <!-- text -->
+  <path class="text" d="M190,385 C170,385 170,415 190,415 M195,385 C215,385 215,415 195,415 M220,385 L220,415 M225,385 C235,385 235,400 225,400 M260,385 L240,385 L240,415 L260,415 M240,400 L260,400 M265,415 L265,385 M270,385 L290,415 M295,415 L295,385" fill="transparent" stroke="rgb(255, 73, 0)" stroke-width="8" stroke-linecap="round" style="filter:url(#glow)" />
+  <path class="text" d="M190,385 C170,385 170,415 190,415 M195,385 C215,385 215,415 195,415 M220,385 L220,415 M225,385 C235,385 235,400 225,400 M260,385 L240,385 L240,415 L260,415 M240,400 L260,400 M265,415 L265,385 M270,385 L290,415 M295,415 L295,385" fill="transparent" stroke="rgb(255, 73, 0)" stroke-width="3" stroke-linecap="round" />
+</svg>
